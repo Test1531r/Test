@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>مقارنة التطبيقات</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      background: #f9f9f9;
+      padding: 40px;
+      direction: rtl;
+    }
+
+    .container-1 {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .header {
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 16px 12px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #e1ecf4;
+      font-weight: bold;
+      color: #1a3e5f;
+    }
+
+    td:first-child {
+      text-align: right;
+      font-weight: bold;
+      background: #f7f7f7;
+    }
+
+    tbody tr:hover {
+      background-color: #f0f8ff;
+      transition: background-color 0.3s ease;
+    }
+
+    .check {
+      color: green;
+      font-weight: bold;
+    }
+
+    .cross {
+      color: red;
+      font-weight: bold;
+    }
+
+    .container {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      max-width: 1200px;
+      margin: 50px auto;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 180px;
+      justify-items: center;
+    }
+
+    .grid img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container-1">
+    <div class="header">مقارنة تجربة المستخدم: السعد هوم مع الحبيب</div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>العنصر</th>
+          <th>السعد هوم</th>
+          <th>الحبيب</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>واجهة المستخدم (UI)</td><td>✅ بسيطة لكن تقليدية</td><td>✅ واضحة وجذابة</td></tr>
+        <tr><td>سهولة الاستخدام (UX)</td><td>✅ تحتاج لبعض التوجيه</td><td>✅ سلسة وبديهية</td></tr>
+        <tr><td>تجربة الشراء</td><td>✅ خطوات واضحة وسهلة</td><td>✅ خطوات واضحة وسهلة</td></tr>
+        <tr><td>خدمة العملاء</td><td>✅ متوفرة وفورية</td><td class="cross">❌ ضعيفة جدا و شبه معدومة</td></tr>
+        <tr><td>الصور وجودة العرض</td><td>✅ جيدة</td><td>✅ جيدة جداً</td></tr>
+        <tr><td>إمكانية إرسال الطلب كهدية</td><td class="cross">❌ غير متوفرة</td><td class="check">✅ متوفرة</td></tr>
+        <tr><td>خيار الاستلام من المعارض</td><td class="cross">❌ غير متوفر</td><td class="check">✅ متوفر</td></tr>
+        <tr><td>اختيار شركة الشحن من قبل العميل</td><td class="cross">❌ يتم التحديد تلقائيًا</td><td class="check">✅ يتيح اختيار بين شركات</td></tr>
+        <tr><td>مدة التوصيل</td><td>✅ من 2 إلى 5 أيام</td><td>✅ من 2 إلى 8 أيام</td></tr>
+        <tr><td>الدفع عند الاستلام</td><td class="cross">❌ غير متوفر</td><td class="check">✅ متاح مع رسوم 9.75 ريال</td></tr>
+        <tr><td> طرق الدفع</td><td>✅  قليل مع عرض تقليدي</td><td>✅ متنوعة مع عرض سلس</td></tr>
+        <tr><td>إنشاء حساب في التطبيق</td><td class="cross">❌ يتطلب عدة خطوات</td><td class="check">✅ سهل وسريع</td></tr>
+        <tr><td>بانرات الموقع والعروض</td><td>✅ قليلة ولا تتغير كثيرًا</td><td>✅ متغيرة وجذابة وبحجم مناسب</td></tr>
+        <tr><td>الهدايا والعروض الترويجية</td><td class="cross">❌ قليلة</td><td class="check">✅ واضحة وموجودة</td></tr>
+        <tr><td>قسم آراء العملاء</td><td class="cross">❌ غير موجود</td><td class="check">✅ ظاهر في الصفحة الرئيسية</td></tr>
+        <tr><td>قسم مخصص للبكيجات</td><td class="cross">❌ بانر فقط</td><td class="check">✅ موجود بانرات + قسم خاص</td></tr>
+        <tr><td>إمكانية الشحن المجاني عند الشراء بقيمة معينة</td><td class="cross">❌ غير متوفر</td><td class="check">✅ متوفرة - عند الشراء بأكثر من 390 ريال</td></tr>
+        <tr><td>طريقة الاستبدال والاسترجاع</td><td class="cross">❌ يتطلب تقديم الطلب من خلال خدمة العملاء</td><td class="check">✅ يتم عبر نموذج في الموقع</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="container">
+    <div class="grid">
+      <img src="/Saa.jpeg" alt="تطبيق السعد هوم" />
+      <img src="/Hbb.jpeg" alt="تطبيق الحبيب" />
+      <img src="/our.jpeg" alt="واجهة المنتج" />
+      <img src="/payment.jpeg" alt="طرق الدفع" />
+      <img src="/Chip.jpeg" alt="الخيارات" />
+      <img src="/Marad.jpeg" alt="العروض والبنرات" />
+      <img src="/cust.jpeg" alt="خدمة العملاء" />
+      <img src="/gift.jpeg" alt="الهدايا" />
+      <img src="/co.jpeg" alt="سياسات المتجر" />
+      <img src="/Screenshot 2025-06-18 150032.png" alt="عرض المقارنة" />
+    </div>
+  </div>
+
+</body>
+</html>
